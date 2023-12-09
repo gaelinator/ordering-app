@@ -1,0 +1,15 @@
+#versioning and meta data
+.git
+.gitignore
+.dockerignore
+
+# Ignore files and directories
+node_modules
+dist.do
+
+# Ignore specific files
+.env
+.DS_Store
+.eslintrc.js
+.prettierrc.js
+Readme.md
