@@ -1,10 +1,10 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { AbstractDocument } from '@app/common'; // Importing AbstractDocument from common-lib
 
-@Schema()
+@Schema({versionKey: false})
 export class Order extends AbstractDocument  {
     // Implementing Order interface
-    @Prop({ required: true })
+    @Prop()
     orderId: string;
 
     @Prop()
